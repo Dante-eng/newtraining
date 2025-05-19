@@ -6,7 +6,7 @@ plugins {
 
 kotlin {
     jvmToolchain(17)
-    androidTarget()
+    android()
     iosX64()
     iosArm64()
     iosSimulatorArm64()
