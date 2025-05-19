@@ -1,0 +1,23 @@
+-- Sale queries
+selectAll:
+SELECT * FROM Sale;
+
+selectById:
+SELECT * FROM Sale WHERE id = ?;
+
+selectByPlayerId:
+SELECT * FROM Sale WHERE playerId = ?;
+
+insertSale:
+INSERT INTO Sale (itemId, playerId, price, discount, paid, debt, date)
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+updateSale:
+UPDATE Sale SET itemId = ?, playerId = ?, price = ?, discount = ?, paid = ?, debt = ?, date = ?
+WHERE id = ?;
+
+deleteById:
+DELETE FROM Sale WHERE id = ?;
+
+lastInsertRowId:
+SELECT last_insert_rowid(); 
