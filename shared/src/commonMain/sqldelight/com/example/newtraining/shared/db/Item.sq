@@ -1,0 +1,19 @@
+selectAll:
+SELECT * FROM Item;
+
+selectById:
+SELECT * FROM Item WHERE id = ?;
+
+insertItem:
+INSERT INTO Item (name, price, type, sellPrice)
+VALUES (?, ?, ?, ?);
+
+updateItem:
+UPDATE Item SET name = ?, price = ?, type = ?, sellPrice = ?
+WHERE id = ?;
+
+deleteById:
+DELETE FROM Item WHERE id = ?;
+
+lastInsertRowId:
+SELECT last_insert_rowid(); 
