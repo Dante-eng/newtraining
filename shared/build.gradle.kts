@@ -63,4 +63,10 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
 tasks.withType<JavaCompile> {
     sourceCompatibility = "17"
     targetCompatibility = "17"
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
 } 
