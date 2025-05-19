@@ -28,22 +28,4 @@ CREATE TABLE Sale (
     date INTEGER NOT NULL,
     FOREIGN KEY(itemId) REFERENCES Item(id),
     FOREIGN KEY(playerId) REFERENCES Player(id)
-);
-
--- Player queries
-playerSelectAll:
-SELECT * FROM Player;
-
-playerSelectById:
-SELECT * FROM Player WHERE id = ?;
-
-playerInsert:
-INSERT INTO Player (uniqueId, fullName, age, height, gender, medicalCondition, pictureUri)
-VALUES (?, ?, ?, ?, ?, ?, ?);
-
-playerUpdate:
-UPDATE Player SET uniqueId = ?, fullName = ?, age = ?, height = ?, gender = ?, medicalCondition = ?, pictureUri = ?
-WHERE id = ?;
-
-playerDeleteById:
-DELETE FROM Player WHERE id = ?; 
+); 
