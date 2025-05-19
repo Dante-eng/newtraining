@@ -1,0 +1,31 @@
+CREATE TABLE Item (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    price REAL NOT NULL,
+    type TEXT NOT NULL,
+    sellPrice REAL
+);
+
+CREATE TABLE Player (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    uniqueId TEXT NOT NULL,
+    fullName TEXT NOT NULL,
+    age INTEGER NOT NULL,
+    height INTEGER NOT NULL,
+    gender TEXT NOT NULL,
+    medicalCondition TEXT NOT NULL,
+    pictureUri TEXT
+);
+
+CREATE TABLE Sale (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    itemId INTEGER NOT NULL,
+    playerId INTEGER NOT NULL,
+    price REAL NOT NULL,
+    discount REAL NOT NULL DEFAULT 0.0,
+    paid REAL NOT NULL DEFAULT 0.0,
+    debt REAL NOT NULL DEFAULT 0.0,
+    date INTEGER NOT NULL,
+    FOREIGN KEY(itemId) REFERENCES Item(id),
+    FOREIGN KEY(playerId) REFERENCES Player(id)
+); 
