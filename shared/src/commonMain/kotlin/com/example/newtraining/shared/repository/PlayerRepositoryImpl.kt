@@ -8,15 +8,15 @@ import kotlinx.coroutines.withContext
 
 class PlayerRepositoryImpl(private val database: AppDatabase) : PlayerRepository {
     override suspend fun getAllPlayers(): List<Player> = withContext(Dispatchers.Default) {
-        database.playerQueries.selectAll().executeAsList().map { it.toPlayer() }
+        database.playerQueries.playerSelectAll().executeAsList().map { it.toPlayer() }
     }
 
     override suspend fun getPlayerById(id: Long): Player? = withContext(Dispatchers.Default) {
-        database.playerQueries.selectById(id.toInt()).executeAsOneOrNull()?.toPlayer()
+        database.playerQueries.playerSelectById(id.toInt()).executeAsOneOrNull()?.toPlayer()
     }
 
     override suspend fun insertPlayer(player: Player): Long = withContext(Dispatchers.Default) {
-        database.playerQueries.insertPlayer(
+        database.playerQueries.playerInsert(
             uniqueId = player.uniqueId,
             fullName = player.fullName,
             age = player.age,
@@ -29,7 +29,7 @@ class PlayerRepositoryImpl(private val database: AppDatabase) : PlayerRepository
     }
 
     override suspend fun updatePlayer(player: Player) = withContext(Dispatchers.Default) {
-        database.playerQueries.updatePlayer(
+        database.playerQueries.playerUpdate(
             uniqueId = player.uniqueId,
             fullName = player.fullName,
             age = player.age,
@@ -42,7 +42,7 @@ class PlayerRepositoryImpl(private val database: AppDatabase) : PlayerRepository
     }
 
     override suspend fun deletePlayer(id: Long) = withContext(Dispatchers.Default) {
-        database.playerQueries.deleteById(id.toInt())
+        database.playerQueries.playerDeleteById(id.toInt())
     }
 }
 
