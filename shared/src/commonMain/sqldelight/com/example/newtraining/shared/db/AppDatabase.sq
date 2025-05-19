@@ -28,4 +28,34 @@ CREATE TABLE Sale (
     date INTEGER NOT NULL,
     FOREIGN KEY(itemId) REFERENCES Item(id),
     FOREIGN KEY(playerId) REFERENCES Player(id)
-); 
+);
+
+-- Select all sales
+selectAll:
+SELECT * FROM Sale;
+
+-- Select sale by ID
+selectById:
+SELECT * FROM Sale WHERE id = ?;
+
+-- Select sales by player ID
+selectByPlayerId:
+SELECT * FROM Sale WHERE playerId = ?;
+
+-- Insert a sale
+insertSale:
+INSERT INTO Sale (itemId, playerId, price, discount, paid, debt, date)
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+-- Update a sale
+updateSale:
+UPDATE Sale SET itemId = ?, playerId = ?, price = ?, discount = ?, paid = ?, debt = ?, date = ?
+WHERE id = ?;
+
+-- Delete a sale by ID
+deleteById:
+DELETE FROM Sale WHERE id = ?;
+
+-- Get last inserted row ID (for SQLite)
+lastInsertRowId:
+SELECT last_insert_rowid(); 
