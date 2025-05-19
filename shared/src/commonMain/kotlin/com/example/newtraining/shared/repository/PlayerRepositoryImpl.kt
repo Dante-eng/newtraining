@@ -19,8 +19,8 @@ class PlayerRepositoryImpl(private val database: AppDatabase) : PlayerRepository
         database.playerQueries.playerInsert(
             uniqueId = player.uniqueId,
             fullName = player.fullName,
-            age = player.age,
-            height = player.height,
+            age = player.age.toLong(),
+            height = player.height.toLong(),
             gender = player.gender,
             medicalCondition = player.medicalCondition,
             pictureUri = player.pictureUri
@@ -32,8 +32,8 @@ class PlayerRepositoryImpl(private val database: AppDatabase) : PlayerRepository
         database.playerQueries.playerUpdate(
             uniqueId = player.uniqueId,
             fullName = player.fullName,
-            age = player.age,
-            height = player.height,
+            age = player.age.toLong(),
+            height = player.height.toLong(),
             gender = player.gender,
             medicalCondition = player.medicalCondition,
             pictureUri = player.pictureUri,
