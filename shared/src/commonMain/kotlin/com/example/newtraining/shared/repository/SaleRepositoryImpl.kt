@@ -12,17 +12,17 @@ class SaleRepositoryImpl(private val database: AppDatabase) : SaleRepository {
     }
 
     override suspend fun getSaleById(id: Long): Sale? = withContext(Dispatchers.Default) {
-        database.saleQueries.selectById(id.toInt()).executeAsOneOrNull()?.toSale()
+        database.saleQueries.selectById(id).executeAsOneOrNull()?.toSale()
     }
 
     override suspend fun getSalesByPlayerId(playerId: Long): List<Sale> = withContext(Dispatchers.Default) {
-        database.saleQueries.selectByPlayerId(playerId.toInt()).executeAsList().map { it.toSale() }
+        database.saleQueries.selectByPlayerId(playerId).executeAsList().map { it.toSale() }
     }
 
     override suspend fun insertSale(sale: Sale): Long = withContext(Dispatchers.Default) {
         database.saleQueries.insertSale(
-            itemId = sale.itemId.toInt(),
-            playerId = sale.playerId.toInt(),
+            itemId = sale.itemId,
+            playerId = sale.playerId,
             price = sale.price,
             discount = sale.discount,
             paid = sale.paid,
@@ -34,19 +34,19 @@ class SaleRepositoryImpl(private val database: AppDatabase) : SaleRepository {
 
     override suspend fun updateSale(sale: Sale) = withContext(Dispatchers.Default) {
         database.saleQueries.updateSale(
-            itemId = sale.itemId.toInt(),
-            playerId = sale.playerId.toInt(),
+            itemId = sale.itemId,
+            playerId = sale.playerId,
             price = sale.price,
             discount = sale.discount,
             paid = sale.paid,
             debt = sale.debt,
             date = sale.date,
-            id = sale.id.toInt()
+            id = sale.id
         )
     }
 
     override suspend fun deleteSale(id: Long) = withContext(Dispatchers.Default) {
-        database.saleQueries.deleteById(id.toInt())
+        database.saleQueries.deleteById(id)
     }
 }
 

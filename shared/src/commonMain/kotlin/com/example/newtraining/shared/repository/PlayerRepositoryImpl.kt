@@ -12,7 +12,7 @@ class PlayerRepositoryImpl(private val database: AppDatabase) : PlayerRepository
     }
 
     override suspend fun getPlayerById(id: Long): Player? = withContext(Dispatchers.Default) {
-        database.playerQueries.playerSelectById(id.toInt()).executeAsOneOrNull()?.toPlayer()
+        database.playerQueries.playerSelectById(id).executeAsOneOrNull()?.toPlayer()
     }
 
     override suspend fun insertPlayer(player: Player): Long = withContext(Dispatchers.Default) {
@@ -37,12 +37,12 @@ class PlayerRepositoryImpl(private val database: AppDatabase) : PlayerRepository
             gender = player.gender,
             medicalCondition = player.medicalCondition,
             pictureUri = player.pictureUri,
-            id = player.id.toInt()
+            id = player.id
         )
     }
 
     override suspend fun deletePlayer(id: Long) = withContext(Dispatchers.Default) {
-        database.playerQueries.playerDeleteById(id.toInt())
+        database.playerQueries.playerDeleteById(id)
     }
 }
 
