@@ -7,7 +7,6 @@ import com.example.newtraining.shared.db.AppDatabase
 
 actual class DatabaseDriverFactory {
     actual fun createDriver(): SqlDriver {
-        // return NativeSqliteDriver(AppDatabase.Schema, "app.db")
-        throw NotImplementedError("Test minimal iOS build")
+        throw NotImplementedError("Test minimal iOS build - no NativeSqliteDriver import")
     }
 } 
