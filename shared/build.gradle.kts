@@ -15,7 +15,6 @@ kotlin {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
                 implementation("com.squareup.sqldelight:runtime:1.5.4")
-                implementation("com.squareup.sqldelight:native-driver:1.5.4")
             }
         }
         val commonTest by getting {
