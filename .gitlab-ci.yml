@@ -6,4 +6,5 @@ stages:
 build_shared:
   stage: build
   script:
+    - chmod +x ./gradlew
     - ./gradlew :shared:assemble 
