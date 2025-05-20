@@ -1,0 +1,8 @@
+com.example.newtraining.shared-pngs-0 C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\generated\res\pngs\release
+com.example.newtraining.shared-resValues-1 C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\generated\res\resValues\release
+com.example.newtraining.shared-mergeReleaseResources-2 C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.example.newtraining.shared-mergeReleaseResources-3 C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.example.newtraining.shared-release-4 C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\merged_res\release\mergeReleaseResources
+com.example.newtraining.shared-androidMain-5 C:\Users\hayde\AndroidStudioProjects\newtraining\shared\src\androidMain\res
+com.example.newtraining.shared-main-6 C:\Users\hayde\AndroidStudioProjects\newtraining\shared\src\main\res
+com.example.newtraining.shared-release-7 C:\Users\hayde\AndroidStudioProjects\newtraining\shared\src\release\res

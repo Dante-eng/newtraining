@@ -1,20 +1,25 @@
 -- Player queries
+
+-- id: Long
 playerSelectAll:
 SELECT * FROM Player;
 
+-- id: Long
 playerSelectById:
-SELECT * FROM Player WHERE id = ?;
+SELECT * FROM Player WHERE id = :id;
 
 playerInsert:
 INSERT INTO Player (uniqueId, fullName, age, height, gender, medicalCondition, pictureUri)
 VALUES (?, ?, ?, ?, ?, ?, ?);
 
+-- id: Long
 playerUpdate:
 UPDATE Player SET uniqueId = ?, fullName = ?, age = ?, height = ?, gender = ?, medicalCondition = ?, pictureUri = ?
-WHERE id = ?;
+WHERE id = :id;
 
+-- id: Long
 playerDeleteById:
-DELETE FROM Player WHERE id = ?;
+DELETE FROM Player WHERE id = :id;
 
 lastInsertRowId:
 SELECT last_insert_rowid(); 
