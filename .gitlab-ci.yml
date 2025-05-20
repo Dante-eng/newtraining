@@ -1,0 +1,9 @@
+image: gradle:8.1.1-jdk17
+
+stages:
+  - build
+
+build_shared:
+  stage: build
+  script:
+    - ./gradlew :shared:assemble 
