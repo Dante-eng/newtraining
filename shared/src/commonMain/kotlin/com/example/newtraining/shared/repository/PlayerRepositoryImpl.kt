@@ -37,12 +37,12 @@ class PlayerRepositoryImpl(private val database: AppDatabase) : PlayerRepository
             gender = player.gender,
             medicalCondition = player.medicalCondition,
             pictureUri = player.pictureUri,
-            id = player.id.toInt()
+            id = player.id
         )
     }
 
     override suspend fun deletePlayer(id: Long) = withContext(Dispatchers.Default) {
-        database.playerQueries.playerDeleteById(id.toInt())
+        database.playerQueries.playerDeleteById(id)
     }
 }
 
