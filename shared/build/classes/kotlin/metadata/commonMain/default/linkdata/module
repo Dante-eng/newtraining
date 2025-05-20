@@ -1,0 +1,2 @@
+
+<shared_commonMain>:com.example.newtraining.shared:!com.example.newtraining.shared.db:(com.example.newtraining.shared.db.shared:$com.example.newtraining.shared.model:)com.example.newtraining.shared.repository

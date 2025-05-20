@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest11160812757122767180.xml:2:13-83
-INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest11160812757122767180.xml:2:13-83
+ADDED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest7234505485558220608.xml:2:13-83
+INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest7234505485558220608.xml:2:13-83
 	package
-		INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest11160812757122767180.xml
+		INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest7234505485558220608.xml
 	xmlns:android
-		ADDED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest11160812757122767180.xml:2:23-81
+		ADDED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest7234505485558220608.xml:2:23-81
 uses-sdk
-INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest11160812757122767180.xml reason: use-sdk injection requested
-INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest11160812757122767180.xml
-INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest11160812757122767180.xml
+INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest7234505485558220608.xml reason: use-sdk injection requested
+INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest7234505485558220608.xml
+INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest7234505485558220608.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest11160812757122767180.xml
+		INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest7234505485558220608.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest11160812757122767180.xml
+		INJECTED from C:\Users\hayde\AndroidStudioProjects\newtraining\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest7234505485558220608.xml
