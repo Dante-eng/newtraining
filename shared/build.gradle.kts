@@ -1,7 +1,7 @@
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
-    id("com.squareup.sqldelight") version "1.5.5"
+    id("com.squareup.sqldelight") version "1.5.4"
 }
 
 kotlin {
@@ -14,7 +14,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-                implementation("com.squareup.sqldelight:runtime:1.5.5")
+                implementation("com.squareup.sqldelight:runtime:1.5.4")
             }
         }
         val commonTest by getting {
@@ -24,22 +24,22 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                implementation("com.squareup.sqldelight:android-driver:1.5.5")
+                implementation("com.squareup.sqldelight:android-driver:1.5.4")
             }
         }
         val iosX64Main by getting {
             dependencies {
-                implementation("com.squareup.sqldelight:native-driver:1.5.5")
+                implementation("com.squareup.sqldelight:native-driver:1.5.4")
             }
         }
         val iosArm64Main by getting {
             dependencies {
-                implementation("com.squareup.sqldelight:native-driver:1.5.5")
+                implementation("com.squareup.sqldelight:native-driver:1.5.4")
             }
         }
         val iosSimulatorArm64Main by getting {
             dependencies {
-                implementation("com.squareup.sqldelight:native-driver:1.5.5")
+                implementation("com.squareup.sqldelight:native-driver:1.5.4")
             }
         }
         val iosMain by creating {
