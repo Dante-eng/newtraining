@@ -1,4 +1,4 @@
-image: gradle:8.1.1-jdk17
+image: registry.gitlab.com/android-ci/android-sdk:31
 
 stages:
   - build
