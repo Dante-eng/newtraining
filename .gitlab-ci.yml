@@ -1,4 +1,4 @@
-image: registry.gitlab.com/android-ci/android-sdk:31
+image: gradle:8.1.1-jdk17
 
 stages:
   - build
@@ -6,5 +6,6 @@ stages:
 build_shared:
   stage: build
   script:
+    - echo "sdk.dir=/tmp" > local.properties
     - chmod +x ./gradlew
     - ./gradlew :shared:assemble 
